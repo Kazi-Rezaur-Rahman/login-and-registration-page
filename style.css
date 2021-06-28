@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+  --mainColor: rgba(25,25,25,0.3);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  max-width: 1400px;
+  height: 100vh;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-1,
+.container-2{
+  display: flex;
+  width: 700px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+  animation: animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.login-img,
+.register-img{
+  width: 350px;
+  background: linear-gradient(to top left, orange,crimson);
+  color: #fff;
+  position: relative;
+}
+.login-img .logo{
+  padding: 0.6em 0.5em;
+  font-size: 1.2em;
+}
+.register-img .logo{
+  padding: 0.6em 0.5em;
+  font-size: 1.2em;
+}
+.login-img .details{
+  max-width: 250px;
+  position: absolute;
+  transform: translate(5%, 70%);
+}
+.register-img .details{
+  max-width: 250px;
+  position: absolute;
+  transform: translate(25%, 70%);
+}
+.login-from,
+.register-form{
+  width: 350px;
+  padding: 1em 0;
+}
+.heading h1{
+  text-align: center;
+  background-image: linear-gradient(to top left, orange,crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  /*color: linear-gradient(to top left, orange,crimson);*/
+}
+form{
+  padding: 0 2em;
+}
+.name,
+.email,
+.password{
+  margin: 0.75em auto;
+}
+.name input[type = text],
+.email input[type = email],
+.password input[type = password]{
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 5px;
+  border: 1px solid var(--mainColor);
+}
+.name input:focus,
+.email input:focus,
+.password input:focus{
+  outline: 1.2px solid var(--mainColor);
+}
+.save-info{
+  font-size: 0.8em;
+  padding: 0.5em 0;
+}
+.error,
+.error2,
+.error3,
+.error4{
+  font-size: .8em;
+  color: red;
+  /*display: none;*/
+  transition: 0.5s;
+  animation: animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.ok,
+.ok2,
+.ok3,
+.ok4{
+  font-size: .8em;
+  color: green;
+  /*display: none;*/
+  transition: 0.5s;
+  animation: animate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.btn{
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  margin: 2em 0;
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom left, orange,crimson);
+}
+
+
+.alternative{
+  text-align: center;
+  height: max-content;
+}
+.social{
+  display: inline;
+  height: 1.5em;
+  padding: 0.5em 0;
+}
+.alternative ion-icon{
+  font-size: 1.3em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fb{
+  background: #425893;
+  color: #fff;
+}
+.twitter{
+  background: #4aa1ea;
+  color: #fff;
+}
+.google{
+  background: #da503a;
+  color: #fff;
+}
+
+
+.register-now{
+  margin-top: 3em;
+  text-align: center;
+}
+.login-now{
+  margin-top: 1em;
+  text-align: center;
+}
+.register a{
+  color: #191919;
+}
+
+
+.custom-shape-divider-bottom-1624038810 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1624038810 svg {
+    position: relative;
+    display: block;
+    width: calc(181% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1624038810 .shape-fill {
+    fill: crimson;
+}
+
+
+.container-2{
+  display: none;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/*@keyframes animation{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
